@@ -28,7 +28,7 @@ gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack',            branch: 'rails-4'
 gem 'activeadmin',         github: 'akashkamboj/active_admin', branch: 'rails4'
 gem 'formtastic',          github: 'justinfrench/formtastic', branch: 'rails4beta'
-
+gem 'tinymce-rails'
 
 gem 'rails-i18n', '~> 4.0.0.pre'
 
@@ -61,7 +61,7 @@ end
 gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano', group: :development
+gem 'capistrano'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

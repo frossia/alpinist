@@ -5,25 +5,66 @@ html
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
-    meta content="width=(device-width,)initial-scale=1.0" name="viewport"
+    meta name="viewport" content="width=device-width"
   body
     #page
       #menu
+        #mainmenu
+          ul
+            li
+              a href='#{root_path}' Главная
+            - unless @all_pages.nil?
+              - @all_pages.each do |page|
+                - if page.published?
+                  li
+                    = link_to page do
+                      - unless page.menu_title.empty?
+                        = page.menu_title
+                      - else
+                        = page.title
 
       #header
+        .fl-l
+          h1
+            = link_to '«ВСЕГДА В СТРОЮ»', :root, :style => 'color: white; text-decoration: none'
+        .fl-r
+          h1 +7 (495) 344-67-13
 
       #board
+        .fl-r
+          div style='text-align: center; margin: 0px 30px 0 0; padding: 15px; color: #212121;'
+            div style='background: #fff; background: rgba( 255, 255, 255, 0.8); padding: 1px; margin: 0 0 15px 0'
+              h2 Часы работы:
+            div style='background: #fff;  background: rgba( 255, 255, 255, 0.8); padding: 0 30px;'
+              p style='padding: 5px'
+                h3 ПН - ПТ: с 8.00 до 23.00
+                h3 СБ - ВС: с 9.00 до 22.00
+              p style='padding: 5px'
 
       .row
-        .large-12.columns
-          = render 'layouts/header'
-      .row
-        .large-8.columns
-          .ui.segment
-            = yield
-        .large-4.columns
-          .ui.segment
-            p asfasfa
+        - if @page && @page.published?
+          - if @page && @page.full_size?
+            .large-12.columns
+              .ui.segment
+                = yield
+
+          - else
+            .large-8.columns
+              .ui.segment
+                = yield
+            .large-4.columns
+              .ui.stacked.segment
+                p Side Menu
+        - elsif @page && (@page.published? != true)
+          h4.text-center Извините! Но страница снята с публикации!
+        - else
+          .large-8.columns
+            .ui.segment
+              = yield
+          .large-4.columns
+            .ui.stacked.segment
+              p Side Menu
+
       .row
         .large-12.columns
           = render 'layouts/footer'

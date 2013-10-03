@@ -1,1 +1,4 @@
-h1 post index
+- unless @all_posts.empty?
+    - @all_posts.each do |post|
+        h1 = post.title
+        p = post.body.html_safe

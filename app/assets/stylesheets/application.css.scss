@@ -18,11 +18,11 @@
 @import "foundation.min.css";
 @import "semantic.min.css.scss";
 @import "compass";
-@import "animate";
+//@import "animate";
 
 
 body {
-  background: url("/images/bg_foto.jpg") no-repeat center center fixed;
+  background: no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,6 +35,18 @@ html {
   background: url("bgr_html.png") repeat-x;
 }
 
+.fl-l {
+  float: left;
+}
+
+.fl-r {
+  float: right;
+}
+
+.block-shadow {
+  @include box-shadow(0 2px 22px 2px #333);
+}
+
 #page {
   width: 1000px;
   margin: 0px auto;
@@ -44,12 +56,16 @@ html {
 #menu {
   width: 100%;
   height: 44px;
+  text-shadow: 0 1px 1px #333;
 }
 
 #header {
   width: 100%;
   height: 132px;
+  padding-top: 15px;
   overflow: hidden;
+  color: white;
+  text-shadow: 0 1px 13px #333;
 }
 
 #board {
@@ -67,24 +83,127 @@ html {
   text-align: center;
 }
 
-#block {
-  @include box-shadow(0 2px 22px 2px #333);
-  @include animate(bounceInDown, .8s, .2s);
-}
-
-.animate1 {
-  &:hover {
-    @include animate(bounce, .8s, .2s);
-  }
-}
-
-.animate_tada {
-  @include animate(tada, 2s, 1s);
-  &:hover {
-    @include animate(tada, .8s, .2s);
-  }
-}
+//#block {
+//  @include box-shadow(0 2px 22px 2px #333);
+//  @include animate(bounceInDown, .8s, .2s);
+//}
+//
+//.animate1 {
+//  &:hover {
+//    @include animate(bounce, .8s, .2s);
+//  }
+//}
+//
+//.animate_tada {
+//  @include animate(tada, 2s, 1s);
+//  &:hover {
+//    @include animate(tada, .8s, .2s);
+//  }
+//}
 
 .label, .button i {
   text-shadow: 0 -1px 1px #333;
+}
+
+
+#menu{
+  width:100%;
+  height:44px;
+}
+#top_rss{
+  float:right;
+}
+#top_rss img{
+  float:left;
+}
+#mainmenu{
+  margin: 0 auto;
+  padding:10px 0 0 0;
+}
+#mainmenu ul{
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  z-index:1000;
+}
+/*Top level list items*/
+#mainmenu ul li{
+  position: relative;
+  display: inline;
+  float: left;
+  z-index:1000;
+  color:#fff;
+  padding:0 0 0 16px;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  font-size:13px;
+  font-weight:bold;
+}
+#mainmenu ul li.first{
+  padding:0;
+  background:none;
+}
+/*Top level menu link items style*/
+#mainmenu ul li a{
+  display:block;
+  color:#fff;
+  z-index:1000;
+  height:27px;
+  padding:5px 10px 0 10px;
+}
+* html #mainmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+  display: inline-block;
+  float:left;
+}
+* html #mainmenu ul li ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+  float:none;
+}
+#mainmenu ul li a:link, #mainmenucat ul li a:visited{
+  text-decoration:none;
+}
+#mainmenu ul li a:hover, #mainmenu .current_page_item a, #mainmenu .select a{
+  color:#fff;
+  background:#9d0d12;
+  text-decoration:none;
+}
+/*1st sub level menu*/
+#mainmenu ul li ul{
+  position: absolute;
+  left: 0;
+  display: block;
+  visibility: hidden;
+  margin:0 0 0 17px;
+}
+/*Sub level menu list items (undo style from Top level List Items)*/
+#mainmenu ul li ul li{
+  display: list-item;
+  float: none;
+  font-size:1.0em;
+  background:none;
+  padding:0;
+}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+#mainmenu ul li ul li ul{
+  top: 0;
+  margin:0;
+}
+/* Sub level menu links style */
+#mainmenu ul li ul li a, #mainmenu ul li.current_page_item ul a, #mainmenu ul li.select ul a{
+  width: 160px; /*width of sub menus*/
+  height:auto;
+  padding: 7px 5px 7px 10px;
+  margin: 0;
+  background:#9d0d12;
+  border-top-width: 0;
+  text-align:left;
+  text-decoration:none;
+  color:#d89ea0;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  text-transform:capitalize;
+  font-weight:normal;
+}
+#mainmenu ul li ul li a:hover{ /*sub menus hover style*/
+  text-decoration:none;
+  color:#fff;
 }
