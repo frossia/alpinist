@@ -49,7 +49,7 @@
     <favorites_list name="club33" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.66904277">
+    <splitter split-orientation="vertical" split-proportion="0.36252546">
       <split-first>
         <leaf>
           <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
@@ -79,10 +79,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/deploy.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0031847">
+                <state line="79" column="80" selection-start="3092" selection-end="3092" vertical-scroll-proportion="1.6972477">
                   <folding />
                 </state>
               </provider>
@@ -119,10 +119,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="posts.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="posts.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/admin/posts.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="57" selection-start="299" selection-end="299" vertical-scroll-proportion="0.1724138">
+                <state line="15" column="57" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -137,10 +137,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Gemfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="85" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.0">
+                <state line="27" column="13" selection-start="797" selection-end="797" vertical-scroll-proportion="0.35532996">
                   <folding />
                 </state>
               </provider>
@@ -167,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20131007074417_add_side_menu_to_pages.rb" />
         <option value="$PROJECT_DIR$/app/admin/pages.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/active_admin.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js" />
@@ -183,6 +182,7 @@
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/admin/posts.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_content.html.slim" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -822,13 +822,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="103" selection-end="134" vertical-scroll-proportion="0.36206895">
@@ -904,7 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/posts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="57" selection-start="299" selection-end="299" vertical-scroll-proportion="0.1724138">
+        <state line="15" column="57" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -946,7 +939,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0031847">
+        <state line="79" column="80" selection-start="3092" selection-end="3092" vertical-scroll-proportion="1.6972477">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="13" selection-start="797" selection-end="797" vertical-scroll-proportion="0.35532996">
           <folding />
         </state>
       </provider>
