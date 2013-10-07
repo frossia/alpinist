@@ -1,0 +1,19 @@
+.large-8.columns
+  .ui.segment
+    = yield
+.large-4.columns
+  .ui.stacked.segment
+    - unless @all_pages.nil?
+      - @all_pages.each do |page|
+        - if page.published? && page.in_side_menu
+          p = link_to page do
+            - unless page.menu_title.empty?
+              = page.menu_title
+            - else
+              = page.title
+  - unless @actual_news.nil?
+    .ui.stacked.segment
+      h3 Актуальные новости
+      - @actual_news.each do |post|
+        = link_to post.title, post
+

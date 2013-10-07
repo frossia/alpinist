@@ -24,18 +24,19 @@ ActiveAdmin.register Page do
     f.inputs "Параметры страницы" do
       f.input :title, :label => "Название страницы"
       f.input :menu_title, :label => "Название в меню"
+      f.input :in_side_menu, :label => "Ссылка в боковом меню"
       f.input :full_size, :label => "Показать на всю ширину страницы"
       f.input :published, :label => "Опубликовано"
     end
     f.inputs "Текст страницы" do
-      f.input :body, :input_html => { :class => "tinymce_editor" }
+      f.cktext_area :body
     end
     f.actions
   end
 
   controller do
     def permitted_params
-      params.permit(:page => [:title, :body, :menu_title, :full_size, :published])
+      params.permit(:page => [:title, :body, :menu_title, :full_size, :published, :in_side_menu])
     end
   end
 

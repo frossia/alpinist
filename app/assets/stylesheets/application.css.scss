@@ -207,3 +207,8 @@ html {
   text-decoration:none;
   color:#fff;
 }
+
+a:link {color: #c40015;}      /* unvisited link */
+a:visited {color:#c40015;}  /* visited link */
+a:hover {color: #f9001b;}  /* mouse over link */
+a:active {color: #4d4d4d;}  /* selected link */

@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   def variables_define
     @all_pages = Page.all
     @all_posts = Post.all
+    @actual_news = Post.actual
   end
 
 

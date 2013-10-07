@@ -1,2 +1,3 @@
-h1 = @page.title
+h2 = @page.title
+/= truncate(@page.body.html_safe, :separator => '<!--more-->')
 = @page.body.html_safe

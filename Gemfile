@@ -28,7 +28,9 @@ gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack',            branch: 'rails-4'
 gem 'activeadmin',         github: 'akashkamboj/active_admin', branch: 'rails4'
 gem 'formtastic',          github: 'justinfrench/formtastic', branch: 'rails4beta'
-gem 'tinymce-rails'
+
+gem 'ckeditor'
+gem 'paperclip'
 
 gem 'rails-i18n', '~> 4.0.0.pre'
 
@@ -43,7 +45,7 @@ gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem "slim-rails"
+gem 'slim-rails'
 
 gem 'zurb-foundation'
 
