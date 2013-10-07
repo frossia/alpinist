@@ -49,7 +49,7 @@
     <favorites_list name="club33" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.36252546">
+    <splitter split-orientation="vertical" split-proportion="0.68126273">
       <split-first>
         <leaf>
           <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
@@ -79,10 +79,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/deploy.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="80" selection-start="3092" selection-end="3092" vertical-scroll-proportion="1.6972477">
+                <state line="96" column="57" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="60" column="85" selection-start="2450" selection-end="2450" vertical-scroll-proportion="-13.2">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/application.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="28" selection-start="530" selection-end="530" vertical-scroll-proportion="0.328125">
                   <folding />
                 </state>
               </provider>
@@ -137,10 +155,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Gemfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="13" selection-start="797" selection-end="797" vertical-scroll-proportion="0.35532996">
+                <state line="33" column="0" selection-start="906" selection-end="906" vertical-scroll-proportion="0.053956833">
                   <folding />
                 </state>
               </provider>
@@ -167,8 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/admin/pages.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/active_admin.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/ckeditor/plugins/wpmore/plugin.js" />
         <option value="$PROJECT_DIR$/app/views/pages/show.html.slim" />
@@ -183,13 +199,15 @@
         <option value="$PROJECT_DIR$/app/admin/posts.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_content.html.slim" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="500" />
+    <option name="x" value="552" />
     <option name="y" value="22" />
-    <option name="width" value="1420" />
+    <option name="width" value="1368" />
     <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -738,14 +756,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="500" y="22" width="1420" height="1054" extended-state="0" />
+    <frame x="552" y="22" width="1368" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22676057" sideWeight="0.6700611" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23538011" sideWeight="0.6700611" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299389" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -822,20 +840,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="103" selection-end="134" vertical-scroll-proportion="0.36206895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="75" selection-start="4037" selection-end="4037" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="82" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.6926752">
@@ -937,16 +941,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="80" selection-start="3092" selection-end="3092" vertical-scroll-proportion="1.6972477">
+        <state line="33" column="0" selection-start="906" selection-end="906" vertical-scroll-proportion="0.053956833">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="797" selection-end="797" vertical-scroll-proportion="0.35532996">
+        <state line="96" column="57" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="85" selection-start="2450" selection-end="2450" vertical-scroll-proportion="-13.2">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="530" selection-end="530" vertical-scroll-proportion="0.328125">
           <folding />
         </state>
       </provider>
