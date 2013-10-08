@@ -206,7 +206,7 @@ ActiveAdmin.setup do |config|
   #
   # config.filters = true
 
-  config.register_javascript 'ckeditor/ckeditor.js'
+  #config.register_javascript 'ckeditor/ckeditor.js'
   config.register_javascript 'ckeditor/init.js'
 
 
