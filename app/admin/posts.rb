@@ -1,6 +1,10 @@
 ActiveAdmin.register Post do
   menu :label => "Новости"
 
+  index :title => 'Новости' do
+    column :title
+    default_actions
+  end
 
   show do
     h1 post.title

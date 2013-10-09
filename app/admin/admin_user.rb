@@ -1,9 +1,10 @@
 ActiveAdmin.register AdminUser do
 
-  menu :label => "Пользователи"
+
+  menu :priority => 2, :label => "Пользователи"
 
 
-  index do
+  index :title => 'Пользователи' do
     column :email
     column :current_sign_in_at
     column :last_sign_in_at

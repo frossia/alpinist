@@ -1,11 +1,8 @@
 ActiveAdmin.register Page do
   menu :label => "Страницы"
 
-  index do
+  index :title => 'Страницы' do
     column :title
-    #column :body
-  #  column :last_sign_in_at
-  #  column :sign_in_count
     default_actions
   end
 
