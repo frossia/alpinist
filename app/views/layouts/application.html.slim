@@ -1,63 +1,59 @@
 doctype html
-html
-  head
-    title Club33
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
-    = csrf_meta_tags
-    meta name="viewport" content="width=device-width"
-  body
-    #page
-      #menu
-        #mainmenu
-          ul
-            li
-              a href='#{root_path}' Главная
+== "<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->"
+== "<!--[if lt IE 7 ]> <html class=\"ie6\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 7 ]>    <html class=\"ie7\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 8 ]>    <html class=\"ie8\" lang=\"en\"> <![endif]-->"
+== "<!--[if IE 9 ]>    <html class=\"ie9\" lang=\"en\"> <![endif]-->"
+== "<!--[if (gt IE 9)|!(IE)]><!--> <html lang=\"en\"> <!--<![endif]-->"
+
+head
+  meta charset="utf-8"
+
+  / Uncomment to make IE8 render like IE7
+  / meta http-equiv="X-UA-Compatible" content="IE=7"
+
+  / Set the viewport width to device width for mobile
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+  title= content_for?(:title) ? yield(:title) : "Untitled"
+
+  = stylesheet_link_tag "application"
+  = javascript_include_tag "vendor/custom.modernizr"
+  = csrf_meta_tag
+
+body
+
+  .content
+    .row
+      br
+      .large-12.columns
+        .shadow
+          .ui.blue.inverted.large.menu
+            a.item href='#{root_path}'
+              i.home.icon
+              | Главная
             - unless @all_pages.nil?
               - @all_pages.each do |page|
-                - if page.published? && (page.in_side_menu != true)
-                  li
-                    = link_to page do
-                      - unless page.menu_title.empty?
-                        = page.menu_title
-                      - else
-                        = page.title
-
-      #header
-        .fl-l
-          h1 style='margin-bottom: 0px;'
-            = link_to 'Клуб 33', :root, :style => 'color: white; text-decoration: none;'
-          h4 style='margin: 0px;' «ВСЕГДА В СТРОЮ»
-        .fl-r
-          h1 +7 (495) 344-67-13
-
-      #board
-        .fl-r
-          div style='text-align: center; margin: 0px 30px 0 0; padding: 15px; color: #212121;'
-            div style='background: #fff; background: rgba( 255, 255, 255, 0.8); padding: 1px; margin: 0 0 15px 0'
-              h2 Часы работы:
-            div style='background: #fff;  background: rgba( 255, 255, 255, 0.8); padding: 0 30px;'
-              p style='padding: 5px'
-                h3 ПН - ПТ: с 8.00 до 23.00
-                h3 СБ - ВС: с 9.00 до 22.00
-              p style='padding: 5px'
-
-      .row
-        - if @page && @page.published?
-          - if @page && @page.full_size?
-            .large-12.columns
-              .ui.segment
-                = yield
-
-          - else
-            = render 'layouts/content'
+                - if page.published? && page.show_in_menu
+                  = link_to page, :class => 'item' do
+                    - unless page.menu_title.empty?
+                      = page.menu_title
+                    - else
+                      = page.title
 
 
-        - elsif @page && (@page.published? != true)
-          h4.text-center Извините! Но страница снята с публикации!
-        - else
-          = render 'layouts/content'
 
-      .row
-        .large-12.columns
-          = render 'layouts/footer'
+        /- if current_page?(controller: 'pages', action: 'show', id: '1')
+        = render 'layouts/slider'
+
+
+        br
+        /.large-12.columns
+        .ui.stacked.segment
+          == yield
+
+      #footer.large-12.columns
+        br
+        br
+
+  = javascript_include_tag "application"

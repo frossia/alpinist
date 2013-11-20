@@ -14,7 +14,45 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require semantic-ui
+//= require jquery.glide.min
 
 $(document).ready(function(){
+
+    $('.slider').glide({
+        autoplay: false,
+        arrows: '.slider',
+        nav: '.slider',
+        nav: false
+    });
+
+//    function getRandomArbitary (min, max) {
+//        return Math.random() * (max - min) + min;
+//    }
+//
+//    $('.ui.button')
+//        .mouseenter(function() {
+//            $( this )
+////                .toggleClass( "active" )
+////                .next()
+////                .stop( true, true )
+////                .slideToggle();
+//                .transition('fade up in', getRandomArbitary(100, 1000) + 'ms')
+//        })
+//        // this is now fade up in
+//
+
+
 });
 
+//$('.kitten').hover (function(){
+
+//    .transition('fade up in', getRandomArbitary(100, 5000) + 'ms')
+//    ;
+//})
+    // this is now fade up in
+
+//;
+
+
+$(document).foundation();

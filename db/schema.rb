@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131007091510) do
+ActiveRecord::Schema.define(version: 20131113173316) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "resource_id",   null: false
@@ -71,6 +71,8 @@ ActiveRecord::Schema.define(version: 20131007091510) do
     t.boolean  "full_size"
     t.boolean  "published",    default: true
     t.boolean  "in_side_menu", default: false
+    t.boolean  "showtitle",    default: true
+    t.boolean  "show_in_menu", default: true
   end
 
   create_table "posts", force: true do |t|

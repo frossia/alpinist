@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def index
-    redirect_to :posts
+    redirect_to :root
   end
 
   def show

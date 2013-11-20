@@ -11,204 +11,194 @@
  *= require_self
  */
 
+
+
 //@import "twitter/bootstrap";
 //@import "twitter/bootstrap/responsive-utilities";
 
 @import "normalize.css";
-@import "foundation.min.css";
-@import "semantic.min.css.scss";
-@import "compass";
+@import "semantic-ui";
+@import 'bourbon';
+@import 'foundation_and_overrides';
 //@import "animate";
 
 
-body {
-  background: no-repeat center center fixed;
-  -webkit-background-size: cover;
+
+body, html, #gradient {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background: image-url('sky.jpg') center center no-repeat fixed;
+  background-attachment: fixed;
   -moz-background-size: cover;
+
+  -webkit-background-size: cover;
+
   -o-background-size: cover;
+
   background-size: cover;
-  font-family: Cambria, Georgia, serif;
+  font-family: ‘Metrophobic’, Arial, serif; font-weight: 400;
   line-height: 1.5;
 }
 
-html {
-  background: url("bgr_html.png") repeat-x;
-}
+#gradient {
+  @include background-image(linear-gradient(rgba(0, 0, 0, 0.4) 0, transparent 50%, rgba(255, 255, 255, 0.7) 100%));
 
-.fl-l {
-  float: left;
-}
-
-.fl-r {
-  float: right;
-}
-
-.block-shadow {
-  @include box-shadow(0 2px 22px 2px #333);
 }
 
 #page {
-  width: 1000px;
-  margin: 0px auto;
-  background: url(bgr_page.png) no-repeat;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 100%;
 }
+
+#content {
+  padding: 20px;
+  @include background(linear-gradient(#f4f4f4, #ffffff, #f4f4f4) left repeat);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  border-top: 1px solid #fff;
+}
+
 
 #menu {
-  width: 100%;
-  height: 44px;
-  text-shadow: 0 1px 1px #333;
+  background: #05a399; /* old browsers */
+  background: -moz-linear-gradient(top, #73faee 3%, #05ccc1 4%, #05a399 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #73faee), color-stop(4%, #05ccc1), color-stop(100%, #05a399)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73faee', endColorstr='#05a399',GradientType=0 ); /* ie */
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.4); /* CSS3 */
+  -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.4); /* Firefox */
+  -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.4); /* Safari, Chrome */
+  //border-top: 1px solid #fff;
+  //box-shadow: 0 0 2px rgba(0,0,0,0.4);
 }
 
-#header {
-  width: 100%;
-  height: 132px;
-  padding-top: 15px;
-  overflow: hidden;
+
+small {
+  font-size: 80%;
+}
+
+.white {
   color: white;
-  text-shadow: 0 1px 13px #333;
 }
 
-#board {
-  width: 100%;
-  height: 280px;
-  background: url(bgr_board.jpg) no-repeat;
-  overflow: hidden;
+
+
+
+.segment-hover {
+  @include transition (all .3s ease-in-out);
+  border-top: 0.2em solid transparent;
+
+  img {
+    @include box-shadow(0 0 0 3px #fff );
+  }
+
+  h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+
+  &:hover {
+    img {
+      border: 1px solid #484848;
+      @include box-shadow( 0 0 7px 1px hsla(0, 0%, 0%, 0.65));
+    }
+    h5 {
+      color: #F05940;
+      text-shadow: none;
+      text-decoration: none;
+    }
+    @extend .orange;
+    @extend .segment;
+    @include transition (all .3s ease-in-out);
+  }
 }
 
-.tj {
+a.no-decor {
+  text-decoration: none;
+}
+
+.white {
+  text-shadow: 0 1px 1px #000;
+  color: #fff;
+}
+
+
+hr {
+  height: 0; border-style: dashed; border-width: 1px 0 0 0;
+}
+
+
+ul#slider {
+
+  li {
+    padding: 10px 20px;
+
+    a {
+      text-transform: uppercase;
+
+      &:hover {
+        h5 {
+        @include transition (all .3s ease-in-out);
+        color: #ff411c;
+        @include transition (all .3s ease-in-out);
+        }
+
+        .circular {
+            box-shadow: 0 0 1px 1px #fff, 0 0 10px 2px #000, 0 0 0 25px #ff411c;
+            @include transition (all .3s ease-in-out);
+        }
+
+      }
+
+      .circular {
+        box-shadow: 0 0 0 5px #fff;
+        @include transition (all .3s ease-in-out);
+        &:hover {
+          box-shadow: 0 0 1px 1px #fff, 0 0 10px 2px #000, 0 0 0 25px #ff411c;
+          @include transition (all .3s ease-in-out);
+        }
+      }
+
+    }
+
+  }
+}
+
+img {
+  @extend .th;
+  @extend .radius;
+}
+
+.shadow {
+  box-shadow: 0 0px 0px 5px rgba(#000, .1);
+  @include transition (all .3s ease-in-out);
+  border-radius: 3px;
+  &:hover {
+    box-shadow: 0 0px 0px 10px rgba(#000, .1);
+  }
+}
+
+.ui.stacked.segment{
+  background: url('cream_pixels.png');
+  box-shadow: 0 0 15px 4px #fff inset, 0 2px 10px 2px rgba(#000, .4),  0 2px 10px 2px rgba(#000, .4);
+  @include transition (all .3s ease-in-out);
+  &:hover {
+    box-shadow: 0 0 15px 4px #fff inset, 0 2px 10px 2px rgba(#000, .4),  0 2px 120px 2px rgba(#000, .4);
+  }
+}
+
+.content {
   text-align: justify;
-}
-
-.tc {
-  text-align: center;
-}
-
-//#block {
-//  @include box-shadow(0 2px 22px 2px #333);
-//  @include animate(bounceInDown, .8s, .2s);
-//}
-//
-//.animate1 {
-//  &:hover {
-//    @include animate(bounce, .8s, .2s);
-//  }
-//}
-//
-//.animate_tada {
-//  @include animate(tada, 2s, 1s);
-//  &:hover {
-//    @include animate(tada, .8s, .2s);
-//  }
-//}
-
-.label, .button i {
-  text-shadow: 0 -1px 1px #333;
+  padding: 15px;
+  ul {
+    list-style-position: inside;
+  }
 }
 
 
-#menu{
-  width:100%;
-  height:44px;
-}
-#top_rss{
-  float:right;
-}
-#top_rss img{
-  float:left;
-}
-#mainmenu{
-  margin: 0 auto;
-  padding:10px 0 0 0;
-}
-#mainmenu ul{
-  margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
-  z-index:1000;
-}
-/*Top level list items*/
-#mainmenu ul li{
-  position: relative;
-  display: inline;
-  float: left;
-  z-index:1000;
-  color:#fff;
-  padding:0 0 0 16px;
-  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-  text-transform:uppercase;
-  font-size:13px;
-  font-weight:bold;
-}
-#mainmenu ul li.first{
-  padding:0;
-  background:none;
-}
-/*Top level menu link items style*/
-#mainmenu ul li a{
-  display:block;
-  color:#fff;
-  z-index:1000;
-  height:27px;
-  padding:5px 10px 0 10px;
-}
-* html #mainmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
-  display: inline-block;
-  float:left;
-}
-* html #mainmenu ul li ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
-  float:none;
-}
-#mainmenu ul li a:link, #mainmenucat ul li a:visited{
-  text-decoration:none;
-}
-#mainmenu ul li a:hover, #mainmenu .current_page_item a, #mainmenu .select a{
-  color:#fff;
-  background:#9d0d12;
-  text-decoration:none;
-}
-/*1st sub level menu*/
-#mainmenu ul li ul{
-  position: absolute;
-  left: 0;
-  display: block;
-  visibility: hidden;
-  margin:0 0 0 17px;
-}
-/*Sub level menu list items (undo style from Top level List Items)*/
-#mainmenu ul li ul li{
-  display: list-item;
-  float: none;
-  font-size:1.0em;
-  background:none;
-  padding:0;
-}
-/*All subsequent sub menu levels vertical offset after 1st level sub menu */
-#mainmenu ul li ul li ul{
-  top: 0;
-  margin:0;
-}
-/* Sub level menu links style */
-#mainmenu ul li ul li a, #mainmenu ul li.current_page_item ul a, #mainmenu ul li.select ul a{
-  width: 160px; /*width of sub menus*/
-  height:auto;
-  padding: 7px 5px 7px 10px;
-  margin: 0;
-  background:#9d0d12;
-  border-top-width: 0;
-  text-align:left;
-  text-decoration:none;
-  color:#d89ea0;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:12px;
-  text-transform:capitalize;
-  font-weight:normal;
-}
-#mainmenu ul li ul li a:hover{ /*sub menus hover style*/
-  text-decoration:none;
-  color:#fff;
-}
 
-a:link {color: #c40015;}      /* unvisited link */
-a:visited {color:#c40015;}  /* visited link */
-a:hover {color: #f9001b;}  /* mouse over link */
-a:active {color: #4d4d4d;}  /* selected link */

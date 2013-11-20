@@ -1,0 +1,5 @@
+- if @page.showtitle
+  h2.ui.header = @page.title
+/= truncate(@page.body.html_safe, :separator => '<!--more-->')
+p.content
+  = @page.body.html_safe

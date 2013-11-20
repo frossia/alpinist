@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails club33: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="c50fac52-3aaf-4d9d-a7bc-622a1cd2029a">
+  <data-source source="LOCAL" name="Rails alpinist: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="dd1e52b0-f1a2-4e64-a1ec-41e54bdc400e">
     <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
     <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
     <libraries>
@@ -11,24 +11,10 @@
         <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
       </library>
     </libraries>
-    <schema name="" catalog=""/>
   </data-source>
-  <data-source source="LOCAL" name="Rails club33: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="2756e2e3-a61b-4698-b7ba-aa2b3108a01e">
+  <data-source source="LOCAL" name="Rails club33: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="a4e5a011-1aef-4c16-85b8-fe052461f26e">
     <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
-    <libraries>
-      <library>
-        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/xerial-sqlite-license.txt</url>
-      </library>
-      <library>
-        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
-      </library>
-    </libraries>
-    <schema name="" catalog=""/>
-  </data-source>
-  <data-source source="LOCAL" name="Rails club33: production" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="ea34ea08-1fe2-4e41-930e-f04fd6df3be3">
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/production.sqlite3</jdbc-url>
+    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
     <libraries>
       <library>
         <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/xerial-sqlite-license.txt</url>

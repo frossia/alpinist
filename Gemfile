@@ -19,6 +19,9 @@ gem 'execjs'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
+gem 'less-rails'
+gem 'semantic-ui-sass', '~> 0.8.2.0'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '2.3.0'
 
@@ -37,7 +40,7 @@ gem 'rails-i18n', '~> 4.0.0.pre'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'compass-rails', github: "Compass/compass-rails", branch: "rails4-hack"
+gem 'bourbon'
 
 #gem 'libv8'
 
@@ -47,9 +50,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'slim-rails'
 
-gem 'zurb-foundation'
-
-#gem 'bootstrap-sass-rails'
+#gem 'compass-rails' # you need this or you get an err
+gem 'zurb-foundation', '~> 4.0.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -64,6 +66,7 @@ gem 'unicorn'
 
 # Use Capistrano for deployment
 gem 'capistrano'
+gem 'rvm-capistrano'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

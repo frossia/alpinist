@@ -6,7 +6,7 @@ Club33::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'posts#index'
+  root :to => "pages#show", :id => '1'
 
   resources :pages
   resources :posts

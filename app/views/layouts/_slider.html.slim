@@ -1,0 +1,98 @@
+br
+
+
+.large-12
+  ul#slider.small-block-grid-2.large-block-grid-4
+    li
+      a.text-center href='#{root_url}pages/4'
+        = image_tag ('facade1.jpg'), :class => 'circular ui image effect-1'
+        hr
+        h5.ui.header.white ремонт фасадов зданий
+    li
+      a.text-center href='#{root_url}pages/5'
+        = image_tag ('moika.jpg'), :class => 'circular ui image'
+        hr
+        h5.ui.header.white мойка окон
+    li
+      a.text-center href='#{root_url}pages/6'
+        = image_tag ('piano.jpg'), :class => 'circular ui image'
+        hr
+        h5.ui.header.white подъем негабаритных предметов
+    li
+      a.text-center href='#{root_url}pages/7'
+        = image_tag ('montaj.jpg'), :class => 'circular ui image'
+        hr
+        h5.ui.header.white монтаж наружной рекламы
+/.ui.four.column.page.grid
+  .column
+    a.no-decor href='#'
+      .ui.segment-hover
+        .text-center
+          = image_tag ('facade1.jpg'), :class => 'circular ui image'
+          .ui.divider
+          h5.ui.header.white ремонт фасадов зданий
+  .column
+    a.no-decor href='#'
+      .ui.segment-hover
+        .text-center
+          = image_tag ('moika.jpg'), :class => 'circular ui image'
+          .ui.divider
+          h5.ui.header.white мойка окон
+  .column
+    a.no-decor href='#'
+      .ui.segment-hover
+        .text-center
+          = image_tag ('montaj.jpg'), :class => 'circular ui image'
+          .ui.divider
+          h5.ui.header.white монтаж наружной рекламы
+  .column
+    a.no-decor href='#'
+      .ui.segment-hover
+        .text-center
+          = image_tag ('piano.jpg'), :class => 'circular ui image'
+          .ui.divider
+          h5.ui.header.white подъем негабаритных предметов
+/br
+/.slider
+  ul.slides
+    li.slide
+      p 1
+      /#slide-height.ui.one.column.page.grid
+        table.in-slide
+          tr
+            td style='width: 40%'
+              = image_tag 'colosseum200.png'
+            td style='width: 60%; color: white;'
+              h2.ui.header Ремонт фасадов зданий
+    li.slide
+      p 2
+      /#slide-height.ui.one.column.page.grid
+        table.in-slide
+          tr
+            td style='width: 40%'
+              = image_tag 'colosseum200.png'
+            td style='width: 60%; color: white;'
+              h2.ui.header Ремонт фасадов зданий!!!
+
+      /.ui.one.column.page.grid
+        .ui.grid
+          .six.wide.column
+            .image_slide
+              = image_tag 'colosseum200.png', class: ''
+          .ten.wide.column
+            h1.ui.header asdasdasd
+        /= image_tag 'slide_1.jpg', :class => 'border'
+    /li.slide
+      /.ui.grid
+        .six.wide.column
+          .ui.segment
+        .ten.wide.column
+          .ui.segment
+    /li.slide
+    /  = image_tag 'slide_1.jpg'
+    /li.slide
+    /  = image_tag 'slider_1.jpg'
+    /li.slide
+    /  = image_tag 'slide_1.jpg'
+    /li.slide
+    /  = image_tag 'slider_1.jpg'
