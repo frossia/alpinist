@@ -17,7 +17,7 @@
     <file path="/basic.icon.less" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1383077448121" ignored="false" />
     <file path="/_content.html.slim" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1384363758255" ignored="false" />
     <file path="/application.html.slim" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1386272763801" ignored="false" />
-    <file path="/show.html.slim" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1386273530831" ignored="false" />
+    <file path="/show.html.slim" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1386281434201" ignored="false" />
     <file path="/index.html.slim" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1383555282470" ignored="false" />
     <file path="/_slider.html.slim" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1384451344590" ignored="false" />
     <file path="/application_helper.rb" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1383555195813" ignored="false" />
@@ -29,6 +29,7 @@
     <file path="/Gemfile" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1384958829879" ignored="false" />
     <file path="/ru.yml" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1386276185462" ignored="false" />
     <file path="/en.yml" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1386275361501" ignored="false" />
+    <file path="/dashboard.rb" changelist="36c25d61-df8f-4d33-98d2-ea604a2a50a8" time="1386281343672" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pages.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pages.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/pages.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="159" selection-start="236" selection-end="236" vertical-scroll-proportion="0.2672956">
+            <state line="12" column="84" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.slim" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.slim" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/show.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="-0.0">
+            <state line="6" column="5" selection-start="170" selection-end="170" vertical-scroll-proportion="0.09677419">
               <folding />
             </state>
           </provider>
@@ -129,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/TMP/pages/show.html.slim" />
         <option value="$PROJECT_DIR$/app/views/layouts/_slider.html.slim" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/Capfile" />
@@ -139,12 +139,13 @@
         <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/pages/show.html.slim" />
         <option value="$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/bundler/gems/active_admin-08ec4928a306/config/locales/ru.yml" />
         <option value="$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/bundler/gems/active_admin-08ec4928a306/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/config/locales/ru.yml" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/admin/pages.rb" />
+        <option value="$PROJECT_DIR$/app/admin/dashboard.rb" />
+        <option value="$PROJECT_DIR$/app/views/pages/show.html.slim" />
       </list>
     </option>
   </component>
@@ -949,23 +950,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="137" selection-start="1109" selection-end="1109" vertical-scroll-proportion="-20.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="108" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/show.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1012,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="25" selection-start="310" selection-end="310" vertical-scroll-proportion="0.14150943">
@@ -1040,9 +1020,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="137" selection-start="1109" selection-end="1109" vertical-scroll-proportion="-20.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/dashboard.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="97" selection-start="93" selection-end="93" vertical-scroll-proportion="0.12578617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/pages.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="159" selection-start="236" selection-end="236" vertical-scroll-proportion="0.2672956">
+        <state line="12" column="84" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="170" selection-end="170" vertical-scroll-proportion="0.09677419">
           <folding />
         </state>
       </provider>
