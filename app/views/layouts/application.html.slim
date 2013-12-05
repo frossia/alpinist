@@ -15,9 +15,10 @@ head
   / Set the viewport width to device width for mobile
   meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-  title= content_for?(:title) ? yield(:title) : "Untitled"
+  title = content_for?(:title) ? yield(:title) : "Промышленный альпинист"
 
   = stylesheet_link_tag "application"
+  = stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
   = javascript_include_tag "vendor/custom.modernizr"
   = csrf_meta_tag
 
@@ -26,6 +27,22 @@ body
   .content
     .row
       br
+      .large-6.columns
+
+        h3.logo = link_to :root do
+          /span.fa-stack.fa-lg
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-flag.fa-stack-1x.fa-inverse
+          i.fa.fa-building-o
+          '  &nbsp;&nbsp;Промышленный альпинист
+      .large-6.columns
+        h3.logo.right
+          a href='#{root_url}pages/2'
+            small +7 (495)
+            '  514-73-83
+    br
+
+    .row
       .large-12.columns
         .shadow
           .ui.blue.inverted.large.menu

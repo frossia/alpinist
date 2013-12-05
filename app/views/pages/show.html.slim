@@ -1,4 +1,4 @@
-/= truncate(@page.body.html_safe, :separator => '<!--more-->')
+- content_for(:title) { @page.title.to_s + ' - Промышленный альпинист'}
 .content
   - if @page.showtitle
     h2.ui.header = @page.title

@@ -143,9 +143,8 @@ ul#slider {
 
       &:hover {
         h5 {
-        @include transition (all .3s ease-in-out);
-        color: #ff411c;
-        @include transition (all .3s ease-in-out);
+          @include transition (all .3s ease-in-out);
+          color: #ff411c;
         }
 
         .circular {
@@ -197,6 +196,17 @@ img {
   padding: 15px;
   ul {
     list-style-position: inside;
+  }
+}
+
+.logo a {
+  color: white;
+  @include transition (all .3s ease-in-out);
+  &:hover {
+    color: #ff411c;
+  }
+  small {
+    color: white;
   }
 }
 
