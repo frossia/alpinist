@@ -21,12 +21,12 @@ ActiveAdmin.register Page do
     f.inputs "Параметры страницы" do
       f.input :title, :label => "Название страницы"
       f.input :menu_title, :label => "Название в меню"
-      f.input :show_in_menu, :label => "Показать в меню в меню"
-      f.input :showtitle, :label => "Показать Заголовок статьи"
+      f.input :show_in_menu, :label => "Показать в меню"
+      f.input :showtitle, :label => "Показать заголовок статьи"
 
       #f.input :in_side_menu, :label => "Ссылка в боковом меню"
       #f.input :full_size, :label => "Показать на всю ширину страницы"
-      f.input :published, :label => "Опубликовано"
+      #f.input :published, :label => "Опубликовано"
     end
     f.inputs "Текст страницы" do
       f.cktext_area :body
@@ -39,5 +39,7 @@ ActiveAdmin.register Page do
       params.permit(:page => [:title, :body, :menu_title, :full_size, :published, :in_side_menu, :showtitle, :show_in_menu])
     end
   end
+
+  filter :title
 
 end
