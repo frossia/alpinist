@@ -77,6 +77,10 @@ ru:
       errors:
         empty_text: "Комментарий не сохранен, текст не должен быть пустым."
     devise:
+      email:
+        title: "Логин"
+      password:
+        title: "Пароль"
       login:
         title: "Войти"
         remember_me: "Запомнить меня"
