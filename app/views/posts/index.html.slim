@@ -1,8 +1,0 @@
-= page_heading 'Главная'
-- unless @all_posts.empty?
-    - @all_posts.each do |post|
-        h1 = link_to post do
-          = post.title
-        end
-        p = post.body.truncate(2000, :separator => '<!--more-->', :omission => ''.html_safe).html_safe
-            p = link_to 'Читаль дальше...', post

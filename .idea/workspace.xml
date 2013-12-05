@@ -69,7 +69,7 @@
       <file leaf-file-name="pages.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/admin/pages.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="15" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.6603774">
+            <state line="17" column="159" selection-start="236" selection-end="236" vertical-scroll-proportion="0.2672956">
               <folding />
             </state>
           </provider>
@@ -1042,7 +1042,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/pages.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="15" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.6603774">
+        <state line="17" column="159" selection-start="236" selection-end="236" vertical-scroll-proportion="0.2672956">
           <folding />
         </state>
       </provider>
